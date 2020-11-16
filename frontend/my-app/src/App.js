@@ -24,6 +24,8 @@ function App() {
     let result = await articleService.likePost(id);
     let oldState = state.articles;
 
+    if(!result || result.status !== true) return;
+
     let newList = oldState.map((data,index) => {
       if(data.id === result.data.id){
         data.likes = result.data.likes;
