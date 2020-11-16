@@ -52,8 +52,8 @@ function App() {
 
         {state.articles?.map((data, index) => {
           return (
-            <div className="cards">
-              <Card key={data.id} className="" title={data.title} bordered={true} style={{ width: 300 }}>
+            <div className="cards" key={data.id} >
+              <Card title={data.title} bordered={true} style={{ width: 300 }}>
                 {data.body}
                 
                 <br/>

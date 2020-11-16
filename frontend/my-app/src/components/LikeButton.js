@@ -1,6 +1,6 @@
 
 
-import { Card, Button } from 'antd'
+import { Button } from 'antd'
 import { HeartOutlined, HeartFilled } from '@ant-design/icons'
 import { Fragment } from 'react';
 

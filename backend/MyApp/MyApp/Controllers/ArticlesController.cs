@@ -19,7 +19,7 @@ namespace MyApp.Controllers
         {
             this.articleManager = articleManager;
         }
-        //[Route("get")]
+        
         public async Task<IActionResult> Index()
         {
             var result = await articleManager.GetArticles();
